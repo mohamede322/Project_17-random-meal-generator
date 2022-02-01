@@ -1,0 +1,203 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+  outline: none;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container {
+  width: 1280px;
+  min-height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 20px 10px;
+}
+
+.container .starter-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.container .starter-page h1 {
+  font-weight: 400;
+}
+
+.container .starter-page h2 {
+  font-weight: 300;
+}
+
+.container .starter-page .get-meal-btn {
+  padding: 8px 35px;
+  background-color: cornflowerblue;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.container .starter-page .get-meal-btn:hover {
+  background-color: #4a79cf;
+}
+
+.container .random-meal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  display: none;
+}
+
+.container .random-meal-container .meal-info {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.container .random-meal-container .meal-info img {
+  width: 360px;
+  height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .random-meal-container .meal-info .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.container .random-meal-container .meal-info .section .section-header {
+  font-weight: bold;
+}
+
+.container .random-meal-container .meal-info .category {
+  padding-top: 10px;
+}
+
+.container .random-meal-container .meal-info .ingredients-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.container .random-meal-container .meal-info .ingredients-container .ingredients-header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container .random-meal-container .meal-info .ingredients-container .ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-position: inside;
+}
+
+.container .random-meal-container .meal-instructions-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+}
+
+.container .random-meal-container .meal-instructions-container .meal-name {
+  font-size: 30px;
+}
+
+.container .youtube-video-container {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+  .container .youtube-video-container {
+    width: 100%;
+  }
+  .container .youtube-video-container iframe {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

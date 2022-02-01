@@ -1,0 +1,108 @@
+@import "helpers/default";
+@import "helpers/breakpoints";
+
+.container {
+  width: 1280px;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 10px;
+  .starter-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    h1 {
+      font-weight: 400;
+    }
+    h2 {
+      font-weight: 300;
+    }
+    .get-meal-btn {
+      padding: 8px 35px;
+      background-color: cornflowerblue;
+      font-weight: 500;
+      color: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.1s;
+      &:hover {
+        background-color: rgb(74, 121, 207);
+      }
+    }
+  }
+  .random-meal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    display: none;
+    .meal-info {
+      align-self: flex-start;
+      img {
+        width: 360px;
+        height: 360px;
+        object-fit: cover;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      .section {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .section-header {
+          font-weight: bold;
+        }
+      }
+      .category {
+        padding-top: 10px;
+      }
+      .ingredients-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 20px;
+        .ingredients-header {
+          font-weight: bold;
+          font-size: 20px;
+        }
+        .ingredients {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          list-style-position: inside;
+        }
+      }
+    }
+    .meal-instructions-container {
+      flex: 1;
+      align-self: flex-start;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 20px;
+      .meal-name {
+        font-size: 30px;
+      }
+    }
+  }
+  .youtube-video-container {
+    display: none;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+    .youtube-video-container {
+      width: 100%;
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}
